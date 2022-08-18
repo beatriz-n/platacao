@@ -6,12 +6,11 @@
         </div>
         <input type="text" placeholder="Plantação" />
         <br>
-            <v-row>
+  <v-row>
     <v-col cols="12">
       <v-select
         :items="items"
-        readonly
-        label="Read-only"
+        label="Propriedade"
       ></v-select>
     </v-col>
   </v-row>
@@ -70,19 +69,23 @@ h5 {
   background-color: rgb(205, 40, 40);
   color: aliceblue;
   height: 1.5rem;
-  margin-left: 10px;
+  margin-left: 25px;
   font-size: 10px;
   width: 14rem;
   margin-top: 1rem;
 }
 .btn-register {
-  background-color: rgba(179, 223, 250, 255);
+  background-color: rgba(1, 149, 247, 255);
   color: aliceblue;
   transition: 0.5s;
 }
 .btn-register:hover {
-  background-color: rgba(1, 149, 247, 255);
-  color: aliceblue;
+  background-color: transparent;
+  color: #222;
+}
+.btn-danger:hover {
+  background-color: transparent;
+  color: #222;
 }
 .v-divider {
   margin: 30px;
