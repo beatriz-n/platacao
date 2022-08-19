@@ -2,18 +2,17 @@
   <div class="register">
     <div class="form">
       <div class="input-form">
-        <input type="text" placeholder="Propriedade" />
+        <div class="select">
+      <div class="input-container">
+        <select>
+          <option value="">Selecione a propriedade</option>
+          <option>assadad</option>
+        </select>
+      </div>
+        </div>
         </div>
         <input type="text" placeholder="Plantação" />
         <br>
-  <v-row>
-    <v-col cols="12">
-      <v-select
-        :items="items"
-        label="Propriedade"
-      ></v-select>
-    </v-col>
-  </v-row>
         <v-divider>ou</v-divider>
       <v-row no-gutters>
         <v-row
@@ -50,15 +49,6 @@ export default {
 .register {
   align-items: center;
 }
-h1 {
-  color: black;
-  margin-bottom: 1rem;
-}
-h5 {
-  color: rgb(163, 163, 163);
-  margin-right: 30px;
-  margin-left: 30px;
-}
 .form {
   text-align: center;
   margin-top: 5rem;
@@ -90,9 +80,6 @@ h5 {
 .v-divider {
   margin: 30px;
 }
-.v-text-field {
-  display: flex;
-}
 input {
   border: solid rgba(216, 216, 216, 255) 1.3px;
   border-radius: 0.3rem;
@@ -108,7 +95,22 @@ input {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-img {
-  width: 3rem;
+ select{
+  height: 2rem;
+  width: 300px;
+  display: flex;
+  width: 30rem;
+  margin: 2px;
+  border: solid rgba(216, 216, 216, 255) 1.3px;
+  border-radius: 0.3rem;
+  background-color: rgba(250, 250, 250, 255);
+    font-size: 12px;
+    padding-left: 0.7rem;
+    margin: 2px;
+    color: rgb(123, 123, 123);
+}
+.input-container{
+  padding-left: 2.1rem;
+  margin-top: 1rem;
 }
 </style>
